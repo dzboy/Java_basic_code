@@ -1,7 +1,5 @@
 package com.ysoyso.introduction;
 
-import java.io.UnsupportedEncodingException;
-
 /**
  * <H1>标识符命名规则</H1>
  * Java 中标识符是为方法、变量等定义的名称。
@@ -11,7 +9,7 @@ import java.io.UnsupportedEncodingException;
  *      <li>数字（0~9）和字母（A~Z 和 a~z）</li>
  *      <li>美元符号（$）</li>
  *      <li>下划线（_）</li>
- *      <li>Unicode 字符集中符号大于 0xC0 的所有符号：<a href="https://www.unicode.org/charts/PDF/U0080.pdf" target="_blank">U0080字符集</a></li>
+ *      <li>Unicode 字符集中符号大于等于 0xC0 的所有符号：<a href="https://www.unicode.org/charts/PDF/U0080.pdf" target="_blank">U0080字符集</a></li>
  *  </ul>
  *  标识符的第一个符号必须为<B>字母、下划线和美元符号</B>其中一个
  *  后面可以是任何字母、数字、美元符号或下划线。
@@ -27,21 +25,21 @@ import java.io.UnsupportedEncodingException;
  *     <tr><th>类型</th><th>内容</th></tr>
  *     <tr>
  *         <td>数据类型</td>
- *         <td>boolean、int、long、short、byte
+ *         <td>boolean、int、long、short、byte、
  *         float、double、char、class、interface</td></tr>
  *     <tr>
  *         <td>流程控制</td>
- *         <td>if、else、do、while、for
- *         switch、case、default、break、continue、return
+ *         <td>if、else、do、while、for、
+ *         switch、case、default、break、continue、return、
  *         try、catch、finally</td></tr>
  *     <tr>
  *         <td>修饰符</td>
- *         <td>public、protected、private、final、void
+ *         <td>public、protected、private、final、void、
  *         static、strict、abstract、transient、
  *         synchronized、volatile、native</td></tr>
  *     <tr>
  *         <td>动作</td>
- *         <td>package、import、throw、throws、extends
+ *         <td>package、import、throw、throws、extends、
  *         implements、this、supper、instanceof、new</td>
  *     </tr>
  *     <tr>
@@ -49,25 +47,22 @@ import java.io.UnsupportedEncodingException;
  *         <td>true、false、null、goto、const</td>
  *     </tr>
  *  </table>
- *
- *  <H1>变量和常量</H1>
- *  常量定义后，在内存地址中的值是不可变的
- *  变量定义后，是可以随意修改的
  */
 public class VariableDemo {
-    public static final String HELLO = "Hello World";
-    public static final int NO1 = 1;
-
-    public static void main(String[] args) throws UnsupportedEncodingException {
-//        String 1a = "1a";
-//        String public = "public";
-//        String goto = "goto";
-//        String ° = "";
-        String À = "a";
-        String 老郝不太老 = "cool man";
-//        HELLO = "Hello World!";
-//        NO1 = 2;
-        System.out.println(HELLO);
-        System.out.println(Math.PI);
+    public static void main(String[] args) {
+        int hello_1$À = 1;
+//        int 1hello = 2;
+        String A = "A";
+        String a = "a";
+        String _boolean = "true";
+//        String ¿_ = "?";
     }
+
+    public static void hello_1$À() {
+
+    }
+
+//    public static void 1hello() {
+//
+//    }
 }

@@ -1,46 +1,71 @@
 package com.ysoyso.data;
 
 public class DataDemo {
-
     /**
      * bit 位
      * byte 字节 1byte = 8bit
      * KB 1KB = 1024byte
      * MB 1MB = 1024KB
      * GB 1GB = 1024MB
-     *
+     * TB 1TB = 1024GB
      * @param args
      */
     public static void main(String[] args) {
+        demo();
+    }
 
-        // 原码：高位表示符号位，其他位表示数值位数
-        // 反码：在原码基础上，符号位不动，数值为取反，得到反码
-        // 补码：在反码的基础上+1，得到的就是原码的补码
+    private static void demo() {
+        byte b1 = 1;
+        byte b2 = 1;
+        System.out.println(b1 + b2);
+        short s1 = 2;
+        short s2 = 1;
+        System.out.println(s2 - s1);
+        int i1 = 100;
+        int i2 = 10;
+        System.out.println(i1 * i2);
+        long l1 = 100;
+        long l2 = 10;
+        System.out.println(l1 / l2);
+        float f = 100.01F;
+        System.out.println(f / i2);
 
-        // 1 字节 = 8bit
-        // 01111111
-        // 10000000
-        // 01111111
-        // 10000000
-        // -128 ~ 127
+        char c = 'c';
+        System.out.println(c);
+        int ci = c;
+        System.out.println(ci);
+        int ci2 = Integer.valueOf(c);
+        System.out.println(ci2);
+
+        char a = 'A';
+        System.out.println(a);
+        int ai = a;
+        System.out.println(ai);
+
+        boolean flag = true;
+        System.out.println(flag);
+
+    }
+
+    private static void data() {
+        // 1byte
         byte b = 1;
-        // 2 字节
+        // 2byte
         short s = 1;
-        // 4 字节
+        // 4byte
         int i = 1;
-        // 8 字节
+        // 8byte
         long l = 1;
 
-        // 4字节
-        float f = 1.0F;
-        // 8字节
-        double d = 2.0;
+        // 4byte
+        float f = 1.0f;
+        // 8byte
+        double d = 1.0;
 
+        // 2byte
         char c = 'c';
 
         boolean flag = true;
-        boolean flag2 = false;
-
-
+        boolean flag1 = false;
     }
 }

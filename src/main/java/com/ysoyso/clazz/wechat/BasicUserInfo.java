@@ -3,7 +3,7 @@ package com.ysoyso.clazz.wechat;
 public class BasicUserInfo {
     public static final int BOY = -1;
     public static final int GIRL = 1;
-    private String nickname;
+    protected String nickname;
     public int age;
     public int sex;
     public String des;

@@ -1,6 +1,7 @@
 package com.ysoyso.clazz;
 
 import com.ysoyso.clazz.wechat.BasicUserInfo;
+import com.ysoyso.clazz.wechat.Friend;
 
 public class Demo {
     public static void main(String[] args) {
@@ -31,11 +32,28 @@ public class Demo {
 //        System.out.println(girl.getNickname());
 
 
-        BasicUserInfo girl = new BasicUserInfo(15, BasicUserInfo.GIRL);
-        System.out.println(girl.age);
-        BasicUserInfo boy = new BasicUserInfo(16, BasicUserInfo.GIRL);
-        System.out.println(boy.age);
+//        BasicUserInfo girl = new BasicUserInfo(15, BasicUserInfo.GIRL);
+//        System.out.println(girl.age);
+//        BasicUserInfo boy = new BasicUserInfo(16, BasicUserInfo.GIRL);
+//        System.out.println(boy.age);
+//
+//        System.out.println(new BasicUserInfo(17, BasicUserInfo.GIRL).age);
 
-        System.out.println(new BasicUserInfo(17, BasicUserInfo.GIRL).age);
+        BasicUserInfo info = new BasicUserInfo();
+        info.age = 1;
+        info.sex = BasicUserInfo.BOY;
+        info.setNickname("昭昭");
+
+        Friend friend = new Friend();
+        friend.age = 2;
+        friend.sex = BasicUserInfo.GIRL;
+        friend.setFirstLetter("A");
+        friend.setNickname("小芳");
+
+        System.out.println(friend.getNickname() + " <==> " + info.getNickname());
+        System.out.println(friend.getFirstLetter());
+
+//        System.out.println(friend instanceof BasicUserInfo);
+
     }
 }

@@ -70,8 +70,10 @@
 - 属性和变量的作用域
 
 ### Object类
+- ==
 - equals
 - hashCode
+- getClass
 - toString
 
 ### lambda表达式

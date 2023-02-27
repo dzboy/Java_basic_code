@@ -20,20 +20,38 @@
 - HashSet
 - TreeSet
 - LinkedHashSet
-- EnumSet
 
 ### Queue
 
+- Queue
 - Deque
 - LinkedList
 - PriorityQueue
+
+| Queue | 抛异常       | 返回特定值    |
+|-------|-----------|----------|
+| 插入    | add(e)    | offer(e) |
+| 移除    | remove()  | poll()   |
+| 检查    | element() | peek()   |
+
+| Deque | 	First Element (Head)	 |                | Last Element (Tail) |               |
+|-------|------------------------|----------------|---------------------|---------------|
+|       | 抛异常                    | 	返回特定值         | 	抛异常	               | 返回特定值         |
+| 插入    | 	addFirst(e)           | 	offerFirst(e) | 	addLast(e)         | 	offerLast(e) |
+| 移除	   | removeFirst()          | 	pollFirst()   | 	removeLast()       | 	pollLast()   |
+| 检查    | 	getFirst()	           | peekFirst()    | getLast()	          | peekLast()    |
 
 ### Map
 
 - HashMap
 - TreeMap
 - LinkedHashMap
+
+### 枚举
+
+- Enum
 - EnumMap
+- EnumSet
 
 ### 小集合
 

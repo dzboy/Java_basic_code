@@ -46,6 +46,7 @@
 - HashMap
 - TreeMap
 - LinkedHashMap
+- IdentityHashMap
 
 ### 枚举
 

@@ -51,8 +51,8 @@
 ### 枚举
 
 - Enum
-- EnumMap
 - EnumSet
+- EnumMap
 
 ### 小集合
 

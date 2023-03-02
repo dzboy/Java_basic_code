@@ -83,7 +83,15 @@
 
 ### 线程安全的集合
 
-- ConcurrentMap
+  HashMap
+t1   k1    ->     1
+t2     k1  ->  2        k1 -> 1
+
+- ConcurrentHashMap
+  t1   k1->1
+  t2         k1->2   k1->2
+
+  ArrayList
 - CopyOnWriteArrayList
 - Collection.synchronizedMap
 

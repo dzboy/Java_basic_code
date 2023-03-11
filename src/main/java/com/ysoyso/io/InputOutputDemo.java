@@ -15,12 +15,14 @@ public class InputOutputDemo {
             StringBuilder builder = new StringBuilder();
 
             byte[] bytes = new byte[1024];
-//            while (bis.read(bytes) >= 0) {
-//                builder.append(new String(bytes));
+//            int length = 0;
+//            while ((length = bis.read(bytes)) >= 0) {
+//                builder.append(new String(bytes, 0, length));
 //            }
             char[] chars = new char[1024];
-//            while (isr.read(chars) >= 0) {
-//                builder.append(new String(chars));
+//            int length = 0;
+//            while ((length = isr.read(chars)) >= 0) {
+//                builder.append(new String(chars, 0, length));
 //            }
 //            System.out.println(builder);
 
@@ -30,6 +32,32 @@ public class InputOutputDemo {
 //            }
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+
+        try (FileOutputStream fos = new FileOutputStream(file);
+             BufferedOutputStream bos = new BufferedOutputStream(fos);
+             FileWriter fw = new FileWriter(file);
+
+             OutputStreamWriter osw = new OutputStreamWriter(fos);
+             BufferedWriter bw = new BufferedWriter(osw)) {
+
+//            bos.write("\r\nBufferedOutputStream".getBytes());
+//            bos.write("\r\nBufferedOutputStream1".getBytes());
+//            bos.flush();
+
+//            fw.append("\r\nBufferedOutputStream2");
+//            fw.append("\r\nBufferedOutputStream3");
+//            fw.write("\r\nHello");
+
+//            osw.write("\r\nBufferedOutputStream4");
+//            osw.write("\r\nBufferedOutputStream5");
+
+//            bw.write("BufferedOutputStream6");
+//            bw.newLine();
+//            bw.write("BufferedOutputStream7");
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

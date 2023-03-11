@@ -14,7 +14,7 @@ public class AccessInputOutputDemo {
             e.printStackTrace();
         }
         try (RandomAccessFile af = new RandomAccessFile(file, "r")) {
-            af.seek(Animal.SEEK_STEP * 2);
+            af.seek(Animal.SEEK_STEP);
             Animal animal = Animal.read(af);
             System.out.println(animal);
         } catch (IOException e) {

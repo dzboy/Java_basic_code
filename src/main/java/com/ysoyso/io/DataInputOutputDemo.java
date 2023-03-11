@@ -10,6 +10,8 @@ public class DataInputOutputDemo {
              DataOutputStream dos = new DataOutputStream(os)) {
             dos.writeByte(127);
             dos.writeChar('c');
+            dos.writeInt(100);
+            dos.writeDouble(100.1);
             dos.writeBoolean(true);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -19,6 +21,8 @@ public class DataInputOutputDemo {
              DataInputStream dis = new DataInputStream(is)) {
             System.out.println(dis.readByte());
             System.out.println(dis.readChar());
+            System.out.println(dis.readInt());
+            System.out.println(dis.readDouble());
             System.out.println(dis.readBoolean());
         } catch (IOException e) {
             throw new RuntimeException(e);

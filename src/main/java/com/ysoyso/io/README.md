@@ -22,3 +22,10 @@
 - ObjectOutputStream/ObjectInputStream
 - Serializable的属性
 - 序列化对象版本
+
+### 对象clone、浅拷贝和深拷贝
+- Cloneable
+- 浅拷贝
+- 深拷贝
+- transient
+- 常量类的保存与恢复

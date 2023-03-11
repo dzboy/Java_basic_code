@@ -16,3 +16,9 @@
 - BufferedInputStream
 - DataInputStream
 - RandomAccessFile
+
+### 对象序列化
+- Serializable
+- ObjectOutputStream/ObjectInputStream
+- Serializable的属性
+- 序列化对象版本

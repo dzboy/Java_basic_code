@@ -7,7 +7,7 @@
 
 ### 装饰器模式
 
-![alt 装饰器模式](img/decorator.png)
+![alt 装饰器模式](../../../../resources/decorator.png)
 
 ### InputStream和OutputStream
 - FileInputStream

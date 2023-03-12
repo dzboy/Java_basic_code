@@ -39,13 +39,13 @@
 - 代码块、静态代码块、构造器、属性的初始化顺序
 
   #### - 虚拟机运行时内存区域划分 -
-  ![alt 虚拟机运行时内存区域划分](img/jvm.jpeg)
+  ![alt 虚拟机运行时内存区域划分](../../../../resources/jvm.jpeg)
   #### - ClassLoader -
   自下向上委派加载，自上向下尝试加载
 
-  ![alt ClassLoader](img/classloader.jpeg)
+  ![alt ClassLoader](../../../../resources/classloader.jpeg)
   #### - 类的生命周期 -
-  ![alt 类的生命周期](img/lifecycle.jpeg)
+  ![alt 类的生命周期](../../../../resources/lifecycle.jpeg)
 
 ### 设计模式
 - 抽象类

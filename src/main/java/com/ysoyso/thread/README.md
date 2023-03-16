@@ -2,17 +2,17 @@
 
 ### 线程
 - 线程和进程
-- 线程创建
 - 线程状态
+- 线程创建
 - start
 - sleep
 ![线程状态图](../../../../resources/threadstate.png)
 ### 线程的一些其他方法
 - 线程名
+- 线程优先级 和 yield()
 - 守护线程
 - 未捕获异常处理
-- 线程优先级 和 yield()
-### 结束线程
+### 中断线程
 - 标志位
 - interrupt中断线程
 - InterruptedException
@@ -24,12 +24,12 @@
 ### 显示锁
 - Lock
 ### 线程通信
-- join
-  - join
 - 条件队列
   - wait
   - notify
   - notifyAll
+- join
+  - join
 - 显示条件队列
   - Condition
 ### 同步工具类
@@ -49,9 +49,14 @@
 - 生产者消费者模式
 - 中断
 ### 线程池
+- Executor
+- ThreadPoolExecutor
+- Executors
+- ExecutorService/ExecutorCompletionService
 - 线程池参数介绍
 - 默认线程池
 - 自定义线程池
+- CompletionService
 ### 线程安全：状态安全
 - 属性和race condition
 - volatile

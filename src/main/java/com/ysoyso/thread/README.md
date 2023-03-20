@@ -17,6 +17,11 @@
 - interrupt中断线程
 - InterruptedException
 - 中断状态恢复
+```
+ Thread.currentThread().interrupt() // 设置当前线程的中断状态
+ Thread.interrupted() // 返回当前状态，清除中断状态
+ Thread.currentThread().isInterrupted() // 判断当前线程中断状态
+```
 ### 同步代码块
 - synchronized
 - 监视器锁

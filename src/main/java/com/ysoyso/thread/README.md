@@ -23,18 +23,28 @@
  Thread.currentThread().isInterrupted() // 判断当前线程中断状态
 ```
 ### 同步代码块
+- join
 - synchronized
 - 监视器锁
 - 静态锁/对象锁
-### 显示锁
-- Lock
-### 线程通信
 - 条件队列
   - wait
   - notify
   - notifyAll
-- join
-  - join
+### 线程安全：状态安全
+- 属性和race condition
+- volatile
+- final
+- AtomicXXX
+- synchronized
+- ThreadLocal
+- 本地变量
+### 线程安全：时序安全
+- 指令重排序
+- synchronized和监视器锁
+- 显示锁
+### 显示锁
+- Lock
 - 显示条件队列
   - Condition
 ### 同步工具类
@@ -62,18 +72,6 @@
 - 默认线程池
 - 自定义线程池
 - CompletionService
-### 线程安全：状态安全
-- 属性和race condition
-- volatile
-- final
-- AtomicXXX
-- synchronized
-- ThreadLocal
-- 本地变量
-### 线程安全：时序安全
-- 指令重排序
-- synchronized和监视器锁
-- 显示锁
 ### 性能和活跃性
 - 锁竞争
 - 死锁

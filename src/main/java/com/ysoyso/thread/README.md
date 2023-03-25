@@ -31,19 +31,18 @@
   - wait
   - notify
   - notifyAll
-### 线程安全：状态安全
-- 属性和race condition
-- volatile
+### 线程安全：状态安全 可见性和原子性
+- 属性变量和race condition
 - final
+- 本地变量
+- ThreadLocal
 - AtomicXXX
 - synchronized
-- ThreadLocal
-- 本地变量
-### 线程安全：时序安全
+- volatile
+### 线程安全：顺序安全 有序性
 - 指令重排序
 - synchronized和监视器锁
 - 显示锁
-### 显示锁
 - Lock
 - 显示条件队列
   - Condition

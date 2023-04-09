@@ -52,7 +52,7 @@
 - Semaphore
 - Phaser
 - Exchanger
-- Callback
+- Callable
 - Future/结束
 ### 线程安全的集合
 - CopyOnWriteArrayList

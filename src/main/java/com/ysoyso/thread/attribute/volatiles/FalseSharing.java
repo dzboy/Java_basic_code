@@ -35,7 +35,7 @@ public class FalseSharing  implements Runnable {
     }
 
     //jdk8新特性，Contended注解避免false sharing
-    @sun.misc.Contended
+//    @sun.misc.Contended
     // jdk11
 //    @jdk.internal.vm.annotation.Contended
     public final static class VolatileLongAnno {

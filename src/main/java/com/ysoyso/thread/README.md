@@ -64,12 +64,16 @@
 - 中断
 ### 线程池
 - Executor
-- ThreadPoolExecutor
+- ExecutorService
+  - ThreadPoolExecutor
+    - RejectedExecutionHandler
+    - ThreadFactory
+    - BlockingQueue
+  - ScheduledThreadPoolExecutor
+- ForkJoinPool
 - Executors
-- ExecutorService/ExecutorCompletionService
-- 线程池参数介绍
-- 默认线程池
-- 自定义线程池
+- Callable
+- Future
 - CompletionService
 ### 性能和活跃性
 - 锁竞争
